@@ -261,19 +261,17 @@ function ganador() {
     var ganador = Math.min(total1ero_calculos(), total2do_calculos(), total3ero_calculos(), total4to_calculos(), total5to_calculos(), total6to_calculos());
 
     if(ganador == total1ero_calculos()) {
-        document.getElementById('ganador').innerHTML += "1er grado, con " + ganador + "%";
-    } else if (ganador == total2do_calculos()) {
-        document.getElementById('ganador').innerHTML += "2do grado, con " + ganador + "%";
-    } else if(ganador == total3ero_calculos()) {
-        document.getElementById('ganador').innerHTML += "3er grado, con " + ganador + "%";
-    } else if(ganador == total4to_calculos()) {
-        document.getElementById('ganador').innerHTML += "4to grado, con " + ganador + "%";
-    } else if(ganador == total5to_calculos()) {
-        document.getElementById('ganador').innerHTML += "5to grado, con " + ganador + "%";
-    } else if(ganador == total6to_calculos()) {
-        document.getElementById('ganador').innerHTML += "6to grado, con " + ganador + "%";
-    } else {
-        document.getElementById('ganador').innerHTML += "Ha ocurrido un error.";
+        document.getElementById('ganador').innerHTML += "1er grado, con " + ganador + "%, ";
+    } if (ganador == total2do_calculos()) {
+        document.getElementById('ganador').innerHTML += "2do grado, con " + ganador + "%, ";
+    } if(ganador == total3ero_calculos()) {
+        document.getElementById('ganador').innerHTML += "3er grado, con " + ganador + "%, ";
+    } if(ganador == total4to_calculos()) {
+        document.getElementById('ganador').innerHTML += "4to grado, con " + ganador + "%, ";
+    } if(ganador == total5to_calculos()) {
+        document.getElementById('ganador').innerHTML += "5to grado, con " + ganador + "%, ";
+    } if(ganador == total6to_calculos()) {
+        document.getElementById('ganador').innerHTML += "6to grado, con " + ganador + "%, ";
     }
 
     
